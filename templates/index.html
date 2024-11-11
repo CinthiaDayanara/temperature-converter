@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Temperatura</title>
+</head>
+<body>
+    <h1>Convertidor de Temperatura</h1>
+    <form method="POST">
+        <label for="celsius">Temperatura en Celsius:</label>
+        <input type="text" id="celsius" name="celsius" required>
+        <button type="submit">Convertir</button>
+    </form>
+    {% if fahrenheit is not none %}
+        <h2>Temperatura en Fahrenheit: {{ fahrenheit }}</h2>
+    {% endif %}
+</body>
+</html>
